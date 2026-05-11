@@ -45,11 +45,11 @@ Our Output in response to the inputs:
 ##Input: 
 User Uploads an image of the potential living space
 The input we provided:
-
+![Screenshot](images/image(2).png)
 
 AI Step 2: Image Analysis
 Gemini Analyzes the the uploaded image and answers questions about Safety, Style, Rating, Cleansiness, Size, and Fit 
-
+![Screenshot](images/image(3).png)
 Output: 
 Output of the analysis of the image, most importantly the rating of the house, its safety concerns, and whether or not the living space is a fit for the needs of the user.
 Our Output:
@@ -135,7 +135,9 @@ Here's a breakdown of the comparison:
 **Conclusion:**
 Despite offering a parking spot and potentially being a non-shared unit, the overwhelming visual evidence points to a significant mismatch in **location** and serious concerns regarding the **safety and general condition** of the building due to its apparent age and severe neglect. These factors make it a poor fit for the stated requirements.
 
-
+![Screenshot](images/image(4).png)
+![Screenshot](images/image(5).png)
+![Screenshot](images/image(6).png)
 
 
 
@@ -186,6 +188,7 @@ Here's why, and what would need to happen to make it safe for a family:
 
 In conclusion, while it *could* potentially become a safe home, it would require substantial financial investment, time, and professional expertise to address the numerous safety and health concerns that are either visible or highly probable. It is certainly not move-in ready for a family. 
 
+![Screenshot](images/image(7).png)
 
 
 
@@ -193,7 +196,7 @@ In conclusion, while it *could* potentially become a safe home, it would require
 
 Failure Case
 
-
+![Screenshot](images/image(8).png)
 
 The failure case lies in the image analysis section of our model. The first input provided by the user was, “I need a room or small studio in San Jose for under $1600 a month. Safety is very important to me, and I want to live in a very safe neighborhood near San Jose State University with parking and good public transportation.” After being given the structured extraction of all the requirements that was asked for, the uploaded picture was used as a reference. In our image-analysis test, the model described the uploaded property as appearing generally safe based on the well-maintained property, highlighting the exterior lighting around the house. This is a major flaw in the system, as the model has no real access to actual crime patterns/data. Variables like traffic risk, nighttime conditions, and even the area of the house are not accounted for. The problem is that factors like neighborhood safety cannot be confirmed solely from the image. Rather, there needs to be real data that the model can accurately base its output on.
 
