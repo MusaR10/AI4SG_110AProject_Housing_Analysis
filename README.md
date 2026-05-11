@@ -38,7 +38,7 @@ Gemini converts the resident message into structured JSON.
 
 
 Our Output in response to the inputs: 
-
+![Workflow screenshot](images/image (1).png)
 
 
 
