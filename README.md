@@ -41,6 +41,7 @@ Our Output in response to the inputs:
 
 
 
+
 ##Input: 
 User Uploads an image of the potential living space
 The input we provided:
